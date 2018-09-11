@@ -1,0 +1,46 @@
+ BEhavior driven development trata de escribir pruebas de una manera que sea facil de entender, casi como el
+ lenguaje natural, de manera que personas que no estan involucradas puedan entender que se esta testeando.
+
+ (funciones de Jasmine)
+ beforeAll: Esta funcion es llamada una vez, antes de que todos los specs en el describe sean corridos
+ afterAll: Esta funcion es llamada una vez todos los specs han finalizado
+ beforeEach: Esta funcion es llamada antes de que cada funcion de especificacion it ha sido corrida
+ afterEach: Esta funcion es llamada despues de que cada especificacion de prueba ha sido corrida
+
+ para deshabilitar una prueba se usa una x antes del describe o el it, de esta manera la prueba no se ejecutara,
+ para solo ejecutar unas pruebas especificas se soloca una f antes del describe o el it, de modo que solo se ejecutaran
+ las que tengan el fdescribe, fit.
+
+ La funcion describe(string, funcion) define lo que llaman una suite de pruebas, o una coleccion de pruebas
+ especificas individuales.
+
+ La funcion it(string, funcion) define una especificaion de prueba individual, lo que contiene uno o mas resultados esperados
+ de pruebas.
+
+ La expresion expect(actual) es lo que se llama una espectativa. en conjunto con un matcher, esta expresion describe una pieza
+ de codigo esperado del ambiente en la aplicacion
+
+ la exprecion matcher(expected) es lo que se llama un matcher. Esto es una comparacion booleana con el valor esperado, en contraste con el valor actual
+ que fue pasado a la funcion expect. Si el match es falso, la prueba fallara.
+
+
+Algunos ejemplos de expect con los que viene Jasmine
+expect(array).toContain(member);
+expect(fn).toThrow(string);
+expect(fn).toThrowError(string);
+expect(instance).toBe(instance);
+expect(mixed).toBeDefined();
+expect(mixed).toBeFalsy();
+expect(mixed).toBeNull();
+expect(mixed).toBeTruthy();
+expect(mixed).toBeUndefined();
+expect(mixed).toEqual(mixed);
+expect(mixed).toMatch(pattern);
+expect(number).toBeCloseTo(number, decimalPlaces);
+expect(number).toBeGreaterThan(number);
+expect(number).toBeLessThan(number);
+expect(number).toBeNaN();
+expect(spy).toHaveBeenCalled();
+expect(spy).toHaveBeenCalledTimes(number);
+expect(spy).toHaveBeenCalledWith(...arguments);
+
