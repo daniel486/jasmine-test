@@ -43,7 +43,7 @@ describe('Component: Login', () => {
         spyOn(service, 'isAuthenticated').and.returnValue(false); // se le pasa el objeto (instancia de AuthService) con el que se hara el spy y el segundo parametro es la funcion
         //a la que se le hara el spy.
         expect(component.needsLogin()).toBeTruthy();
-        expect(service.isAuthenticated).toHaveBeenCalled();
+        expect(service.isAuthenticated).toHaveBeenCalled(); //De este modo chequeamos si la funcion isAuthenticated es llamada
     });
 
     it('needsLogin returns false when the user is authenticated', () => {
