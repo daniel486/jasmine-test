@@ -1,3 +1,5 @@
+This is a practice for Unit Testing with Jasmine, provided by https://codecraft.tv/
+
 # JasmineTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.0.
