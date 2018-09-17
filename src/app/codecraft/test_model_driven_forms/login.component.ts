@@ -12,6 +12,9 @@ export class User {
 
 @Component({
     selector: 'app-login',
+    //Cuando el usuario envia el formulario (submit), llamara la funcion login()
+    //Tambien asociamos el elemento form del template con el model form en nuestro componente
+    //Enlazamos form controls especificos a FormControls en nuestro form model (email y password)
     template: `
     <form (ngSubmit)="login()"
             [formGroup]="form">
@@ -34,6 +37,7 @@ export class LoginComponent {
 
     }
 
+    //Inicializamos el form model en el ngOnInit
     ngOnInit() {
         this.form = this.fb.group({
             email: ['', [
