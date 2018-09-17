@@ -1,4 +1,4 @@
-import {
+/*import {
     HttpClientTestingModule,
     HttpTestingController
 } from "@angular/common/http/testing";
@@ -70,4 +70,4 @@ describe("Service: Search", () => {
             expect(service.results[0].artistId).toBe(78500);
         })
     );
-});
+});*/
