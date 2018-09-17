@@ -58,7 +58,9 @@ describe('Router: App', () => {
     fit('navigate to "" redirects you to /home', fakeAsync(() => {
         //Lanzamos la funcion navigate para ir a la ruta vacia
         router.navigate(['']);
+        //Esperamos a que todas las promesas se resuelvan
         tick();
+        //Vemos donde deberiamos estar con location.path()
         expect(location.path()).toBe('/home');
     }));
 
